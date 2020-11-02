@@ -7,7 +7,7 @@ title: linux
     {% for post_linux in site.posts_linux %}
     <li>
 	<span class="blog-title"><a href="{{ site.baseurl }}{{ post_linux.url }}">{{ post_linux.title }}</a></span>
-	<span class="blog-time"><time class="pull-right post-list">{{ post.date | date_to_string | date: "%b %-d, %Y"  }}</h4></time></span>
+	<span class="blog-time"><time class="pull-right post-list">{{ post_linux.date | date_to_string | date: "%b %-d, %Y"  }}</h4></time></span>
     </li>
     {% endfor %}
   </ul>
