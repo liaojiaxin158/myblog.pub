@@ -23,8 +23,4 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-  - scope:
-      path: ""
-      type: "posts_linux"
-    values:
-      layout: "post_linux"
+
