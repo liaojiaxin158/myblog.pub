@@ -4,6 +4,15 @@ title: 配置管理
 <div id="article" aos="zoom-in">
   <h1 align="center"><span>配置</span>管理</h1>
   <h1 align="center"><span><a href="/categories/">博文分类</a></span></h1>
+  <h4>Category</h4>
+<ul>
+    //这里使用了 Jekyll 语法，会被编译，所以加多个"\"
+    {\% for category in site.categories %\}
+    <li><a href="/categories/{\{ category | first }\}/" title="view all
+posts">{\{ category | first }\} {\{ category | last | size }\}</a>
+    </li>
+    {\% endfor %\}
+</ul>
   <ul class="posts">
     {% for post in site.posts %}
     <li>
